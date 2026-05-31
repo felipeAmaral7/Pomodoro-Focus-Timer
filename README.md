@@ -1,4 +1,4 @@
-# 🍅 Pomodoro Focus Timer
+# Pomodoro Focus Timer
 
 <p align="center">
 <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android Badge"/>
@@ -8,13 +8,13 @@
 
 Um aplicativo nativo para Android desenvolvido com o intuito de aplicar os conceitos de **Foreground Services (Serviços de Primeiro Plano)** para gerenciar contagens regressivas de foco (técnica Pomodoro) de forma segura em segundo plano.
 O foco principal do desenvolvimento deste projeto foi lidar com as exigências modernas do sistema operacional Android (APIs 24 a 34), que impõem restrições rigorosas à execução de serviços contínuos e exibição de notificações.
-## ✨ Funcionalidades
+## Funcionalidades
 **Ciclo de Vida Misto:** Implementação conjunta dos modos de serviço *Started* (independência da Activity) e *Bound* (vinculação reativa à tela).
 **Controles em Segundo Plano:** Play, Pause e Stop não param quando a tela é bloqueada ou minimizada.
 **Notificações Interativas:** Botões injetados dinamicamente na notificação via `PendingIntent`.
 **UI Responsiva e Fluida:** Construída através de layouts XML padronizados (FrameLayout e MaterialCardView), usando Material Design 3.
 **Atualização em Tempo Real:** Sem travamento do aplicativo ou recarga da Activity, comunicando o Serviço com a Activity através de fluxos de dados modernos.
-## 🛠️ Tecnologias e Arquitetura
+## Tecnologias e Arquitetura
 
 O aplicativo foi arquitetado utilizando bibliotecas limpas e recursos nativos orientados ao ecossistema Jetpack moderno.
 
@@ -25,7 +25,7 @@ O aplicativo foi arquitetado utilizando bibliotecas limpas e recursos nativos or
 **Android Notifications:** Tratamento dinâmico de instâncias utilizando `NotificationCompat` e permissões de tempo de execução (`POST_NOTIFICATIONS`) obrigatórias em Android 13+.
 **Foreground Service Tipo especial (Android 14+):** Configuração `specialUse` para respeitar as novas exigências estritas da Google Play.
 
-## 🚀 Como testar localmente
+## Como testar localmente
 
 Pré-requisitos:
 **Android Studio** atualizado (versão Jellyfish/Koala ou superior).
@@ -42,7 +42,7 @@ Após o build, abra a pasta do projeto dentro do seu Android Studio e clique no 
 ./gradlew installDebug
 
 
-## 🛡️ Gestão de Permissões Críticas
+## Gestão de Permissões Críticas
 
 O aplicativo lida proativamente com a evolução rígida do ecossistema Android configurando no `AndroidManifest.xml`:
 *   `FOREGROUND_SERVICE`
